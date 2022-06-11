@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap');
+
+
+/**** Quick Change Styles ****/
+
+
+:root {
+    --text-on-dark-color: #fff;
+    --heading-bars-color: greenyellow;
+    --article-background-color1: rgba(51, 51, 51, .4);
+    --article-background-color2: rgba(51, 51, 51);
+    --background-color-dark: #333;
+    --nav-background-color: #191919;
+}
+
+
+
+/**** The Beginning of the Abyss ****/
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    min-height: 100%;
+    z-index: -2;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+article > .img-collection {
+    display: flex;
+    overflow-y: scroll;
+    background-color: var(--nav-background-color);
+    height: 50vh;
+
+
+}
+article > .img-collection > img {
+    height: 90%;
+    padding: .5%;
+    margin: 1%;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+
+header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-size: 9rem;
+    color: var(--text-on-dark-color);
+    font-weight: 800;
+    background-color: #111;
+    z-index: -2;
+
+}
+
+
+header > p {
+    position: relative;
+    font-display:inherit;
+    top: 5%;
+}
+
+
+.long-grass {
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    background-position: fixed;
+    background-size: contain;
+    top: 70%;
+}
+
+
+nav {
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    position: sticky;
+    background-color: var(--nav-background-color);
+    border-bottom: 4px var(--heading-bars-color);
+    z-index: 99;
+}
+
+
+nav > ul {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul > li {
+    font-size: .25rem;
+    list-style-type: none;
+    color: var(--text-on-dark-color);
+    cursor: pointer;
+}
+
+
+ul > li:hover {
+    color: var(--heading-bars-color);
+    transition: .2s;
+}
+
+
+.nav-item.left {
+    position: relative;
+    display: flex;
+    margin-left: 0;
+    height: 10%;
+    padding: 2%;
+    font-size: 1.5rem;
+    transition: 1s;
+    align-items: center;
+}
+
+
+.nav-item.right {
+    position: absolute;
+    display: flex;
+    right: 0;
+    float: right;
+    height: 10%;
+    padding: 2%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    align-items: center;
+    color: var(--heading-bars-color);
+    border: 4px #222 solid;
+}
+
+
+.nav-item.right:hover {
+    color: white;
+    border: 4px var(--heading-bars-color) solid;
+
+}
+
+
+.nav-item.right:active {
+    color: var(--heading-bars-color);
+}
+
+
+section > article > .heading {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 2%;
+    background-color: var(--heading-bars-color);
+    color: #333;
+    z-index: 10;
+}
+
+
+section > article > .content {
+    display: flex;
+    padding: 0% 10%;
+    font-size: 3rem;
+    margin: 0;
+    height: 80vh;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: var(--article-background-color1);
+    color: var(--text-on-dark-color);
+    font-style: italic;
+}
+
+
+/* --------- Review Form --------- */
+
+
+form {
+    background-color: var(--article-background-color1);
+    z-index: 10;
+}
+
+
+form > article {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 50%;
+    height: 65vh;
+    background-color: rgba(255, 255, 255, .6); 
+    z-index: 10;    
+}
+
+
+.reviews > {
+    filter: brightness(30%);
+
+}
+
+
+.review-submit {
+    width: 9vw;
+    height: 6vh;
+    background-color: #333;
+    border: 3px #191919 solid;
+    color: var(--heading-bars-color);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-top: 5%;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+.review-submit:hover {
+    border: 3px var(--heading-bars-color) solid;
+}
+
+
+form > article > .review-content,
+form > article > .name-input {
+
+    padding: auto;
+    height: 5vh;
+    width: auto;
+    font-size: 1.5rem;
+    border-style: none;
+    outline-style: none;
+    border-radius: 5px;
+}
+
+
+/* --------- Footer Elements --------- */
+
+
+.contact > article {
+    background-color: var(--heading-bars-color);
+    color:rgba(51, 51, 51);
+    height: 10%;
+    width: 100vw;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 9;
+    position: absolute;
+}
+
+
+.contact > article > .heading.left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 3rem;
+
+}
+
+
+.contact > article > .heading.right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    font-size: 3rem;
+
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+
+/* --------- Parallax Animation --------- */
+
+
+
+@keyframes parallax-fg {
+    0% {
+        transform: translateZ(0%)
+    }
+    100% {
+        transform: translateZ(15%);
+    }
+}
+
+
+@keyframes parallax-bg {
+    from {
+        transform: translateZ(0%);
+    }
+    to {
+        transform: translateZ(1.5);
+    }
+} 
+    
+
+
+/* --------- Media Queries [for tablets and smaller] --------- */
+
+
+
+@media  screen and (max-width: 840px) {
+    header {
+        font-size: 2rem;
+        padding: 3%;
+        background-color: white;
+    }
+    
+    nav {
+        position: relative;
+    }
+    nav > ul {
+        justify-content: space-between;
+    }
+
+    .nav-item.right {
+        display: none;
+    }
+
+    section > article > .heading {
+        display: flex;
+        justify-content: center; 
+        font-size: 2.5rem;  
+        height: max-content;
+    }
+
+    section > article > .content {
+        display: flex;
+        text-align: center;
+        word-wrap: break-word;
+        height: max-content;
+    }
+
+    .nav-item.left {
+        justify-content: center;
+        left: 0;
+        margin: 0;
+        padding: 3%;
+
+    }
+    .background {
+        display: none;
+    }
+    form > article {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80vh;
+        padding: 0;
+        margin: 0;
+        background-color: var(--background-color-dark);
+        color: var(--text-on-dark-color);
+
+    }
+    form > article > p {
+        margin-right: 5%;
+        margin-left: auto;
+        display: block;
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    form > article > p > .name-input,
+    form > article > p > .review-content {
+
+        margin-right: 5%;
+        margin-left: auto;
+        width: 60vw;
+        height: 5vh;
+    }
+    form > article > p > .review-content {
+        height: 20vh;
+        
+    }
+    .contact > article > .heading.right,
+    .contact > article > .heading.left {
+        font-size: 2rem;
+    }
+}
+
+
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+
+
+
+
+html.has-scroll-smooth {
+    overflow: hidden; }
+  
+  html.has-scroll-dragging {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .has-scroll-smooth body {
+    overflow: hidden; }
+  
+  .has-scroll-smooth [data-scroll-container] {
+    min-height: 10vh; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-container] {
+    height: 100vh;
+    display: inline-block;
+    white-space: nowrap; }
+  
+  [data-scroll-direction="horizontal"] [data-scroll-section] {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    height: 100%; }
+  
+  .c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform .3s, opacity 0.3s;
+    opacity: .1; }
+    .c-scrollbar:hover {
+      transform: scaleX(1.45); }
+    .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+      opacity: 1; }
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+      width: 100%;
+      height: 10px;
+      top: auto;
+      bottom: 0;
+      transform: scaleY(1); }
+      [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3); }
+  
+  .c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab; }
+    .has-scroll-dragging .c-scrollbar_thumb {
+      cursor: -webkit-grabbing;
+      cursor: grabbing; }
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+      right: auto;
+      bottom: 0; }
