@@ -1,5 +1,28 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
+const review = require('./review-card');
+let john = new review.Review('John', true, "blah blah")
+
+/********* Review card setup *********/ 
+
+var reviewerName = document.getElementById('reviewName');
+var reviewImg = document.getElementById('reviewImage');
+var serviceReviewed = document.getElementById('serviceReviewed');
+
+function appendReviewer(review) {
+  review = {
+    name: review.reviewerName,
+    image: review.reviewImg,
+    service: review.serviceReviewed
+  }
+  
+    return review;
+}
+appendReviewer(john);
+console.log(john);
+
+
+
 /**** Header fade out on scroll ****/
 
 var header = document.getElementById('header');

@@ -9,16 +9,16 @@
 </head>
 <body >
     <img src="assets/chang-qing-8oPubUm97Cc-unsplash.jpg" alt="" class="background" width="120%" height="120%" data-scroll>
-    <header data-scroll-section>
+    <div class="head" data-scroll-section>
         <p id="header" data-scroll data-scroll-speed="1">Bates Lawn Service</p>
-    </header>
+    </div>
     <nav class="has-scroll-smooth" data-scroll-container>
-        <ul class="top-nav" data-scroll-section>
-            <li class="nav-item left" data-scroll>About</li>
-            <li class="nav-item left" data-scroll>Gallery</li>
-            <li class="nav-item left" data-scroll>Reviews</li>
-            <li class="nav-item right" data-scroll>Connect</li>
-        </ul>
+        <div class="top-nav" data-scroll-section>
+            <a href="parallax-template.html" class="nav-item left" data-scroll>About</a>
+            <a href="#" class="nav-item left" data-scroll>Gallery</a>
+            <a href="#" class="nav-item left" data-scroll>Reviews</a>
+            <a href="#" class="nav-item right" data-scroll>Connect</a>
+        </div>
     </nav>
     <main class="has-scroll-smooth body" data-scroll-container>
         <section class="about" data-scroll-section>
@@ -39,21 +39,6 @@
                 </div>
             </article>
         </section>
-        <section class="reviews" data-scroll-container>
-            <article data-scroll-section data-scroll-speed="1">
-                <h1 class="heading" data-scroll>Word around town.</h1>
-            </article>
-        </section>
-        <form class="review-form" data-scroll-container>
-            <article data-scroll-section data-scroll-speed="1">
-                <h1 class="heading" data-scroll>Leave a review.</h1>
-                <p>Name: </p>
-                <input class="name-input" id="nameInput" data-scroll>
-                <p>Review: </p>
-                <input class="review-content" id="reviewContent" placeholder="Share your experience." data-scroll></input>
-                <button class="review-submit" id="submitButton" data-scroll>Submit</button>
-            </article>
-        </form>
         <section class="contact" data-scroll-container data-scroll>
             <article data-scroll-section data-scroll-speed="1">
                 <h1 class="heading left" data-scroll>Get a quote.</h1>
@@ -66,7 +51,5 @@
         <a href="#" class="social-icon" data-scroll>icon</a>
         <a href="#" class="footer-content" data-scroll>Privacy statement</a>
     </footer>
-    <script src="locomotive-scroll.min.js"></script>
-<script src="main.js"></script>
 </body>
 </html>
